@@ -9,7 +9,7 @@ const infographics = [
     title: "Jenis-Jenis Fintech di Indonesia",
     description:
       "Infografis lengkap tentang berbagai jenis fintech yang beroperasi di Indonesia beserta contoh perusahaannya.",
-    image: "${import.meta.env.BASE_URL}images/Infografis-Jenis-Fintech-di-Indonesia.png",
+    image: `${import.meta.env.BASE_URL}images/Infografis-Jenis-Fintech-di-Indonesia.png`
     contributor: "Tim FinSafeEdu",
     category: "Jenis Fintech",
   },
