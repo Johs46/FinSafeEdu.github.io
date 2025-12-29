@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinSafeEdu - Edukasi Fintech</title>
+    <script>
+      // Single Page App redirect for GitHub Pages (project pages)
+      // Redirect 404 requests back to the repo base (e.g. /my-repo/)
+      // while preserving the path for client-side routing.
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+
+      // Store the full path so index.html can restore it
+      sessionStorage.setItem('redirect', path + search + hash);
+
+      // Determine repo base from first segment of the path
+      const segments = path.split('/').filter(Boolean);
+      const repo = segments[0];
+      const base = repo ? `/${repo}/` : '/';
+
+      window.location.replace(base);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
